@@ -8,9 +8,7 @@ import random
 
 print("Lets play rock, paper, scissors.")
 
-humans_choice = input("You human, please enter your choice, rock, paper or scissors: ")
-
-human = humans_choice.lower()	
+human = input("You human, please enter your choice, rock, paper or scissors: ").lower()
 #if human enters uppercase alphabets, those will be converted to lowercase.
 
 rand_num = random.randint(0,2)
