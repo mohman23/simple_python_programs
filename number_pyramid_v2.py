@@ -18,7 +18,7 @@ l = "\U0001f600"
 for i in range(1,10): #this loop
 	j = 1
 	while j < i: #this loop adds smileys next to each other.
-		print(j,l, end="")
+		print(l, end="")
 		#print(j,l, end="") #use this to debug and understand the code.
 		j = j + 1#this is to break out of this while loop.	
 	print(l)	
