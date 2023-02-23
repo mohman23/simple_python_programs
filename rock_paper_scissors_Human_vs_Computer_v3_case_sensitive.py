@@ -18,6 +18,11 @@ for i in range(3):
 
 	human = input("You human, please enter your choice, rock, paper or scissors: ").lower()
 
+	if human == "quit" or human == "q":
+		break
+	#This will allow the human to quit the game at any time.	
+
+
 	computer = random.choice(['rock', 'paper', 'scissors'])
 
 	print("Human chose: ", human)
@@ -67,15 +72,17 @@ for i in range(3):
 print("Player1: ", human_wins, "Player2: ", computer_wins, "Tie: ", tie)
 	
 
+#this while loop shows us who won the best of three tournament.	
 while True:
 	if human_wins > computer_wins:
-		print("Human won the tournament!")
+		print("Human won the best of three tournament!")
 	elif computer_wins > human_wins:
-		print("Computer won the tournament!")
+		print("Computer won the best of three tournament!")
 	elif tie > human_wins:
 		print("It's a draw!")
 	elif tie > computer_wins:
 		print("It's a draw!")		
 	elif human_wins == computer_wins:
 		print("Its a draw!")
-	break		
+	break
+
